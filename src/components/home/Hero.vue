@@ -83,10 +83,12 @@
 .btn-blue {
     background-color: #4299e1;
     color: #fff;
-    font-size: 16px!important;
+    font-size: 14px!important;
+    font-weight: 500!important;
+    padding: 15px 50px!important;
 }
 .demo-btn{
-    width: 350px;
+    width: 300px;
 }
 
 .hero-container .hero .hero-left .hero-text {
@@ -96,12 +98,6 @@
     margin-top: 50px;
 }
 
-.hero-container .hero .hero-left .hero-text .fa {
-    border-top-right-radius: .25rem;
-    border-bottom-right-radius: .25rem;
-    font-size: 36px;
-    color: #3182ce;
-}
 
 .hero-container .hero .hero-left .hero-text p {
     color: #4a5568;
@@ -118,5 +114,48 @@
 .hero-container .hero .hero-right .hero-video {
     margin-left: 6rem;
 }
+
+@media (max-width: 479px) and (min-width: 320px) {
+
+    .hero-container {
+        padding: 30px;
+    }
+    .hero-container .hero {
+        flex-wrap: wrap;
+    }
+    .hero-container .hero .hero-left {
+        padding: 0px;
+        width: 100%;
+    }
+    .hero-container .hero .hero-left h2 {
+        font-size: 36px;
+    }
+    .discount-btn {
+        margin-left: 0px;
+    }
+    .hero-container .hero .hero-right {
+        display: none;
+    }
+    .discount-container {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .arich-card {
+        flex-wrap: wrap;
+    }
+    .arich-card .card-dev {
+        width: 100%;
+    }
+}
+
+@media (max-width: 684px) and (min-width: 575px) {}
+
+@media (max-width: 767px) and (min-width: 685px) {}
+
+@media (max-width: 991px) and (min-width: 768px) {}
+
+@media (max-width: 574px) and (min-width: 480px) {}
+
+@media (max-width: 1199px) and (min-width: 1024px) {}
 
 </style>

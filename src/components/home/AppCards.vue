@@ -151,4 +151,28 @@
 .payment-gateway {
     flex-direction: row-reverse;
 }
+@media (max-width: 479px) and (min-width: 320px) {
+    .customize-mid{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .customize-mid .left-side{
+        width: 100%;
+    }
+    .customize-mid .right-side{
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 684px) and (min-width: 575px) {}
+
+@media (max-width: 767px) and (min-width: 685px) {}
+
+@media (max-width: 991px) and (min-width: 768px) {}
+
+@media (max-width: 574px) and (min-width: 480px) {}
+
+@media (max-width: 1199px) and (min-width: 1024px) {}
 </style>

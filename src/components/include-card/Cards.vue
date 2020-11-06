@@ -20,6 +20,7 @@ import CardBox from '../include-card/CardBox';
         name: 'Cards',
          props: {
           set: String,
+          card: null,
         },
         components: {
             CardBox,

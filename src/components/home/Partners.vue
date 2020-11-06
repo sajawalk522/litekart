@@ -102,4 +102,27 @@
     background-color: #3182ce;
     border-radius: 9999px;
 }
+@media (max-width: 479px) and (min-width: 320px) {
+   .partner-container .partner-div{
+       flex-wrap: wrap;
+       justify-content: center;
+   }
+   .partner-container .partner-inner .partner-text{
+       margin-bottom: 0px;
+       text-align: center;
+   }
+   .svg-container svg{
+     width: 100%;
+   }
+}
+
+@media (max-width: 684px) and (min-width: 575px) {}
+
+@media (max-width: 767px) and (min-width: 685px) {}
+
+@media (max-width: 991px) and (min-width: 768px) {}
+
+@media (max-width: 574px) and (min-width: 480px) {}
+
+@media (max-width: 1199px) and (min-width: 1024px) {}
 </style>

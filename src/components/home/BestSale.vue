@@ -126,4 +126,32 @@
     font-size: 1.125rem;
     margin-left: 30px;
 }
+@media (max-width: 479px) and (min-width: 320px) {
+    .best-sale-container .best-sale .sale-inner{
+        flex-wrap: wrap;
+    }
+    .best-sale-container .best-sale .sale-card{
+        width: 45%;
+        padding: 0;
+        margin-bottom: 30px;
+        justify-content: flex-start;
+    }
+    .sale-buttons{
+        flex-wrap: wrap;
+    }
+    .sale-buttons .btn-red{
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 684px) and (min-width: 575px) {}
+
+@media (max-width: 767px) and (min-width: 685px) {}
+
+@media (max-width: 991px) and (min-width: 768px) {}
+
+@media (max-width: 574px) and (min-width: 480px) {}
+
+@media (max-width: 1199px) and (min-width: 1024px) {}
 </style>

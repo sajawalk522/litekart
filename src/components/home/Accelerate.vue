@@ -243,4 +243,41 @@
     color: #cbd5e0;
     font-size: 16px;
 }
+@media (max-width: 479px) and (min-width: 320px) {
+    .main-container{
+        width: 100%;
+        text-align: center;
+    }
+    .litekart-way-container{
+        flex-wrap: wrap;
+    }
+    .litekart-way-container .kart-image{
+        width: 100%;
+        padding: 20px;
+    }
+    .litekart-way-container .kart-text{
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+    .litekart-way-container .kart-text p{
+        text-align: center;
+    }
+    .arich-card{
+        flex-direction: column;
+    }
+    .arich-card .card-dev{
+        width: 70%;
+    }
+}
+
+@media (max-width: 684px) and (min-width: 575px) {}
+
+@media (max-width: 767px) and (min-width: 685px) {}
+
+@media (max-width: 991px) and (min-width: 768px) {}
+
+@media (max-width: 574px) and (min-width: 480px) {}
+
+@media (max-width: 1199px) and (min-width: 1024px) {}
 </style>

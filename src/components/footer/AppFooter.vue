@@ -342,5 +342,57 @@
     border-top-left-radius: 8px;
     z-index: -1;
   }
+  @media (max-width: 479px) and (min-width: 320px) {
+    .footer .footer-primary{
+        flex-wrap: wrap;
+    }
+    .footer .footer-primary>div:nth-child(1){
+        width: 100%;
+        padding: 30px;
+    }
+    .footer .footer-primary .list-footer-container{
+        justify-content: space-between;
+    }
+    .connected-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        width: 100%;     
+    }
+    .connected-footer .header-text h4{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .connected-footer>div{   
+        margin-left: 0;
+        width: 100%;
+    }
+    .form>div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .privacy-detail{
+        display: none;
+    }
+    #color-bg:after{
+        display:none;
+    }
+    #color-bg:before{
+        display:none;
+    }
+}
+
+@media (max-width: 684px) and (min-width: 575px) {}
+
+@media (max-width: 767px) and (min-width: 685px) {}
+
+@media (max-width: 991px) and (min-width: 768px) {}
+
+@media (max-width: 574px) and (min-width: 480px) {}
+
+@media (max-width: 1199px) and (min-width: 1024px) {}
 /* footer end */
 </style>

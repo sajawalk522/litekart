@@ -80,4 +80,20 @@
     line-height: 1.5;
     margin: 0;
 }
+@media (max-width: 479px) and (min-width: 320px) {
+    .deliver-container .deliver-section .deliver{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 684px) and (min-width: 575px) {}
+
+@media (max-width: 767px) and (min-width: 685px) {}
+
+@media (max-width: 991px) and (min-width: 768px) {}
+
+@media (max-width: 574px) and (min-width: 480px) {}
+
+@media (max-width: 1199px) and (min-width: 1024px) {}
 </style>

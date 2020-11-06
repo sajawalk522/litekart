@@ -1,5 +1,6 @@
 <template>
- <!-- section header end -->
+<div>
+   <!-- section header end -->
     <section class="header-section">
       <div class="since-primary">
         <div class="container">
@@ -42,8 +43,33 @@
           </div>
         </div>
       </div>
+    
     </section>
     <!-- section header end -->
+
+    <div class="mob-header">
+        <div class="logo active-logo">
+        <router-link to="/">
+        <div><img src="../../assets/images/logo.svg" /></div>
+        <div class="logo-text"><span>Litekart</span></div>
+      </router-link>
+    </div>
+        <div id="menuToggle">  
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="#"><li>Home</li></a>
+          <a href="#"><li>About</li></a>
+          <a href="#"><li>Info</li></a>
+          <a href="#"><li>Contact</li></a>
+          <a href="#" target="_blank"><li>Show me more</li></a>
+        </ul>
+      </div>
+    </div>
+  
+</div>
 </template>
 
 <script>
@@ -178,5 +204,206 @@ export default {
     display: block;
 }
 /* header end */
+#menuToggle{
+  display: none;
+}
+
+@media (max-width: 479px) and (min-width: 320px) {
+  .header-primary{
+  display: none;
+  }
+  .header-section{
+    position: unset;
+  }
+  .mob-header{
+   position: relative;
+   top: 50px;
+   left: 0px;
+   width: 100%;
+  }
+   .logo a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding:6px 0;
+   }
+  .logo a>div img{
+  height: 30px;
+  margin-right: 10px;
+  }
+  #menuToggle{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+    .hero-container {
+        padding: 30px;
+    }
+    .hero-container .hero {
+        flex-wrap: wrap;
+    }
+    .hero-container .hero .hero-left {
+        padding: 0px;
+        width: 100%;
+    }
+    .hero-container .hero .hero-left h2 {
+        font-size: 36px;
+    }
+    .discount-btn {
+        margin-left: 0px;
+    }
+    .hero-container .hero .hero-right {
+        display: none;
+    }
+    .discount-container {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .arich-card {
+        flex-wrap: wrap;
+    }
+    .arich-card .card-dev {
+        width: 100%;
+    }
+}
+
+@media (max-width: 684px) and (min-width: 575px) {}
+
+@media (max-width: 767px) and (min-width: 685px) {}
+
+@media (max-width: 991px) and (min-width: 768px) {}
+
+@media (max-width: 574px) and (min-width: 480px) {}
+
+@media (max-width: 1199px) and (min-width: 1024px) {}
 
 </style>

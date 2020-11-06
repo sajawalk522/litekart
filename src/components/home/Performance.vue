@@ -85,5 +85,31 @@
     font-weight: 900;
     margin: 55px;
 }
+@media (max-width: 479px) and (min-width: 320px) {
+    .performance-container .performance{
+        width: 100%;
+        padding: 0px;
+    }
+    .performance-container .performance .perform-cir{
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+    .performance-container .performance .perform-cir .circle-per{
+        margin: 20px;
+    }
+    .performance-container .performance .perform-top{
+        width: 100%;
+    }
+}
 
+@media (max-width: 684px) and (min-width: 575px) {}
+
+@media (max-width: 767px) and (min-width: 685px) {}
+
+@media (max-width: 991px) and (min-width: 768px) {}
+
+@media (max-width: 574px) and (min-width: 480px) {}
+
+@media (max-width: 1199px) and (min-width: 1024px) {}
 </style>
