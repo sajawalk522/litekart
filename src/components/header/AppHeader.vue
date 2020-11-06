@@ -84,6 +84,9 @@ export default {
 
 <style scoped>
 /* header start  */
+.mob-header{
+  display: none;
+}
 .header-section{
     background-color: #fff;
     position: relative;
