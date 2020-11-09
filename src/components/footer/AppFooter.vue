@@ -383,6 +383,9 @@
     #color-bg:before{
         display:none;
     }
+    .footer .footer-primary .list-footer-container>div{
+     padding-left: 7px!important;
+    }
 }
 
 @media (max-width: 684px) and (min-width: 575px) {}

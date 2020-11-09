@@ -183,4 +183,30 @@ import CardBox from '../include-card/CardBox';
 .big-cards .icluded-container {
     width: 100%;
 }
+@media (max-width: 479px) and (min-width: 320px) {
+   .developer-main .developer-container .dev-cards .card{
+       width: 100%;
+       flex-direction: column;
+       text-align: center;
+   }
+   .cards .card-text p{
+       text-align: center;
+   }
+   .big-cards .icluded-container {
+    width: 100%;
+}
+.included-main .icluded-container .includ-cards>div{
+    width: 100%;
+}
+}
+
+@media (max-width: 684px) and (min-width: 575px) {}
+
+@media (max-width: 767px) and (min-width: 685px) {}
+
+@media (max-width: 991px) and (min-width: 768px) {}
+
+@media (max-width: 574px) and (min-width: 480px) {}
+
+@media (max-width: 1199px) and (min-width: 1024px) {}
 </style>

@@ -151,4 +151,37 @@
 
 
 /* Live Project setion end  */
+@media (max-width: 479px) and (min-width: 320px) {
+    .live-project-container .main-container{
+        width: 100%;
+    }
+   .live-project-container .main-container .project-section{
+       flex-wrap: wrap;
+   }
+   .live-project-container .main-container .project-section .project-left{
+       width: 100%;
+   }
+    .live-project-container .main-container .project-section .project-right{
+       width: 100%;
+   }
+   .live-project-container .main-container .project-section .project-right .project-persent{
+       flex-wrap: wrap;
+   }
+   .project-section .project-right .project-persent .pro-persent h1{
+       font-size: 30px!important;
+   }
+   .live-project-container .main-container .project-section .project-right .project-content{
+       padding-top: 30px;
+   }
+}
+
+@media (max-width: 684px) and (min-width: 575px) {}
+
+@media (max-width: 767px) and (min-width: 685px) {}
+
+@media (max-width: 991px) and (min-width: 768px) {}
+
+@media (max-width: 574px) and (min-width: 480px) {}
+
+@media (max-width: 1199px) and (min-width: 1024px) {}
 </style>

@@ -1,6 +1,6 @@
 <template>
     <section class="pricing-main">
-        <div class="price-container">
+        <div class="price-container container">
             <div class="price-head">
                 <h2><span>Grow</span> with us</h2>
                 <p>Free for developers & startups</p>
@@ -326,10 +326,7 @@
     width: 100%;
 }
 
-.pricing-main .price-container {
-    width: 1266px;
-    margin: 0 auto;
-}
+
 
 .pricing-main .price-container .price-head {
     padding: 20px 0px;
@@ -473,4 +470,24 @@
 .pricing-main .price-container .price-card .p-card .btn-blue{
     background-color: #0070f3;
 }
+@media (max-width: 479px) and (min-width: 320px) {
+   .pricing-main .price-container .price-card{
+       flex-direction: column;
+       padding: 0 20px;
+   }
+   .pricing-main .price-container .price-card .p-card{
+       width: 100%;
+       margin:  50px 0px;
+   }
+}
+
+@media (max-width: 684px) and (min-width: 575px) {}
+
+@media (max-width: 767px) and (min-width: 685px) {}
+
+@media (max-width: 991px) and (min-width: 768px) {}
+
+@media (max-width: 574px) and (min-width: 480px) {}
+
+@media (max-width: 1199px) and (min-width: 1024px) {}
 </style>

@@ -1,6 +1,6 @@
 <template>
    <section class="developer-main">
-        <div class="developer-container">
+        <div class="developer-container container">
             <div class="dev-head">
                 <h2>For <span>Developers</span></h2>
             </div>
@@ -59,8 +59,6 @@
 .developer-main .developer-container {
     display: flex;
     flex-direction: column;
-    width: 1266px;
-    margin: 0 auto;
 }
 
 .developer-main .developer-container .dev-head {
@@ -125,4 +123,24 @@
     color: #1a202c;
     line-height: 1.5;
 }
+@media (max-width: 479px) and (min-width: 320px) {
+   .developer-main .developer-container .dev-cards .card{
+       width: 100%;
+       flex-direction: column;
+       text-align: center;
+   }
+   .cards .card-text p{
+       text-align: center;
+   }
+}
+
+@media (max-width: 684px) and (min-width: 575px) {}
+
+@media (max-width: 767px) and (min-width: 685px) {}
+
+@media (max-width: 991px) and (min-width: 768px) {}
+
+@media (max-width: 574px) and (min-width: 480px) {}
+
+@media (max-width: 1199px) and (min-width: 1024px) {}
 </style>

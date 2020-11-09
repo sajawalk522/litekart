@@ -64,4 +64,23 @@
 .hosting-main .hosting-container .host-logos .host-img img {
     width: 100%;
 }
+
+@media (max-width: 479px) and (min-width: 320px) {
+ .hosting-main .hosting-container .host-logos{
+       flex-wrap: wrap;
+   }
+   .hosting-main .hosting-container .host-logos .host-img {
+    width: 100%;
+}
+}
+
+@media (max-width: 684px) and (min-width: 575px) {}
+
+@media (max-width: 767px) and (min-width: 685px) {}
+
+@media (max-width: 991px) and (min-width: 768px) {}
+
+@media (max-width: 574px) and (min-width: 480px) {}
+
+@media (max-width: 1199px) and (min-width: 1024px) {}
 </style>

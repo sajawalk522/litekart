@@ -1,6 +1,6 @@
 <template>
     <section class="technology-main">
-        <div class="techology-container">
+        <div class="techology-container container">
             <div class="tech-head">
                 <h2>Build using <span>Latest Technologies</span></h2>
                 <p>Litekart is always updated with latest technologies</p>
@@ -21,11 +21,6 @@
 <style scoped>
 .technology-main {
     background-color: #f7fafc;
-}
-
-.technology-main .techology-container {
-    margin: 0 auto;
-    width: 1266px;
 }
 
 .technology-main .techology-container .tech-head {
@@ -75,4 +70,20 @@
     max-width: 100%;
     height: auto;
 }
+
+@media (max-width: 479px) and (min-width: 320px) {
+    .tech-img{
+    width: 100%!important;
+}
+}
+
+@media (max-width: 684px) and (min-width: 575px) {}
+
+@media (max-width: 767px) and (min-width: 685px) {}
+
+@media (max-width: 991px) and (min-width: 768px) {}
+
+@media (max-width: 574px) and (min-width: 480px) {}
+
+@media (max-width: 1199px) and (min-width: 1024px) {}
 </style>

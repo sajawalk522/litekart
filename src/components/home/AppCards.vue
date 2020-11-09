@@ -152,6 +152,9 @@
     flex-direction: row-reverse;
 }
 @media (max-width: 479px) and (min-width: 320px) {
+    .customized-container .customize-inner{
+        padding: 20px;
+    }
     .customize-mid{
         flex-direction: column-reverse;
         flex-wrap: wrap;
@@ -159,8 +162,10 @@
     }
     .customize-mid .left-side{
         width: 100%;
+        padding: 0px;
     }
     .customize-mid .right-side{
+        
         width: 100%;
         padding: 0px;
     }
